@@ -1,0 +1,438 @@
+<html lang="es" coupert-item="9AF8D9A4E502F3784AD24272D81F0381" style=""
+    class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths hydrated">
+<link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+<link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+<style lang="en" type="text/css" id="dark-mode-custom-style"></style>
+<style lang="en" type="text/css" id="dark-mode-native-style"></style>
+<style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+
+<head>
+    <meta charset="UTF-8">
+    <style data-styles="">
+        ion-icon {
+            visibility: hidden
+        }
+
+        .hydrated {
+            visibility: inherit
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thor Airlines</title>
+    <link rel="stylesheet" href="resources/estilos.css">
+    <link rel="stylesheet" href="resources/style.css">
+    <meta name="description"
+        content="¿Buscas aumentar la realidad y el disfrute del mundo de la aviación? Esta es tu aerolinea virtual.">
+    <meta name="keywords" content="thor,airlines,aerolinea,va,virtual,airline">
+    <meta name="author" content="Thor Airlines">
+    <link rel="icon" type="image/x-icon" href="resources/favicon.png">
+    <script src="resources/js/modernizr.js"></script> <!-- Modernizr -->
+    <style>
+        @font-face {
+            font-family: 'Aileron';
+            font-weight: 400;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Roboto-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Aileron';
+            font-weight: 400;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Regular.ttf);
+            unicode-range: U+41-5a;
+        }
+
+        @font-face {
+            font-family: 'Aileron';
+            font-weight: 400;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Regular.ttf);
+            unicode-range: U+61-7a;
+        }
+
+        @font-face {
+            font-family: 'Aileron';
+            font-weight: 600;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Roboto-Medium.ttf);
+        }
+
+        @font-face {
+            font-family: 'Aileron';
+            font-weight: 600;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Medium.ttf);
+            unicode-range: U+41-5a;
+        }
+
+        @font-face {
+            font-family: 'Aileron';
+            font-weight: 600;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Medium.ttf);
+            unicode-range: U+61-7a;
+        }
+
+        @font-face {
+            font-family: 'Aileron';
+            font-weight: 700;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Roboto-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: 'Aileron';
+            font-weight: 700;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Bold.ttf);
+            unicode-range: U+41-5a;
+        }
+
+        @font-face {
+            font-family: 'Aileron';
+            font-weight: 700;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Aileron-Bold.ttf);
+            unicode-range: U+61-7a;
+        }
+    </style>
+    <style>
+        [_nghost-fdo-c52] {
+            font-family: Open Sans, sans-serif;
+            color: #121212
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a onclick="MostrarHome()"><img src="resources/logothr.png" alt="logo"></a>
+            </div>
+            <div class="navbar">
+                <div class="icon-bar" onclick="Show()">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+                <ul id="nav-lists">
+                    <li class="close"><span onclick="Hide()">×</span></li>
+                    <li><a onclick="MostrarNosotros()">NOSOTROS</a></li>
+                    <li><a onclick="MostrarSistema()">SISTEMA</a></li>
+                    <li><a onclick="MostrarStaff()">EQUIPO</a></li>
+                    <li><a href="https://thorairlines.com/onesky/">ONESKY</a></li>
+                    <li><a href="https://crew.thorairlines.com/register">REGISTRO</a></li>
+                    <li><a href="https://crew.thorairlines.com/login">CREW</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="oscurecer"></div>
+    <div id="fondo1" style="display: block"></div>
+    <div id="fondo2" style="display: none"></div>
+    <div id="fondo3" style="display: none"></div>
+    <div id="fondo4" style="display: none"></div>
+    <div class="nosotros" id="home" style="display: none;">
+        <div class="textoinicial">
+            <section class="cd-intro">
+                <h1 class="cd-headline slide">
+                    <span>THOR</span>
+                    <span class="cd-words-wrapper" style="width: 207px;">
+                        <b class="is-visible">AIRLINES</b>
+                        <b class="is-hidden">FAMILY</b>
+                        <b class="is-hidden">CREW</b>
+                        <b class="is-hidden">FLYING</b>
+                    </span>
+                </h1>
+            </section>
+
+        </div>
+    </div>
+    <div class="nosotros" id="politica" style="display: none">
+        <div class="contenido">
+            <h2>Privacy Policy</h2>
+            <p> Your privacy is important to us. It is <strong>ThorAirlines's</strong> policy to respect your privacy
+                regarding any information we may collect from you across our website, <a
+                    href="https://thorairlines.com">ThorAirlines</a>, and other sites we own and operate.</p>
+            <p> We only ask for personal information when we truly need it to provide a service to you. We collect it by
+                fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and
+                how it will be used. </p>
+            <p> We only retain collected information for as long as necessary to provide you with your requested
+                service. What data we store, we’ll protect within commercially acceptable means to prevent loss and
+                theft, as well as unauthorised access, disclosure, copying, use or modification.</p>
+            <p> We don’t share any personally identifying information publicly or with third-parties, except when
+                required to by law. </p>
+            <p> Our website may link to external sites that are not operated by us. Please be aware that we have no
+                control over the content and practices of these sites, and cannot accept responsibility or liability for
+                their respective privacy policies. </p>
+            <p> You are free to refuse our request for your personal information, with the understanding that we may be
+                unable to provide you with some of your desired services. </p>
+            <p>Your continued use of our website will be regarded as acceptance of our practices around privacy and
+                personal information. If you have any questions about how we handle user data and personal information,
+                feel free to contact us. </p>
+            <h2>More Information</h2>
+            <p> Hopefully that has clarified things for you and as was previously mentioned if there is something that
+                you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does
+                interact with one of the features you use on our site. </p>
+            <p> This policy is effective as of <strong>June</strong> <strong>2022</strong>. </p>
+        </div>
+    </div>
+    <div class="nosotros" id="info" style="display: none">
+        <div class="contenido">
+            <h2>Bienvenido a ThorAirlines!</h2>
+            <p>Thor Airlines se presenta como una aerolínea creada en 2020, por entusiastas de la aviación que busca el
+                disfrute del mundo de la aviación virtual. Los valores de la VA es el compañerismo, aprender todos
+                juntos y el buen ambiente, por esa razón nuestra academia tiene un trato personal, eficiente y de
+                calidad. Podrás volar desde una avioneta, habilitarte en un tipo de avión o hasta ser un buen
+                controlador de aproximación. Thor Airlines cuenta con dos bases una en el aeropuerto de Palma de
+                Mallorca (LEPA) y la otra en el aeropuerto de Tenerife Norte Ciudad de La Laguna (GCXO). La aerolínea
+                cuenta con total de 3 filiales, Thor Regional, Thor Cargo y FlyWing. Y todo esto con un sistema
+                exclusivo creado por amantes de los mundos virtuales, para amantes virtuales. Soporte de nuestro staff
+                24 horas al dia, 7 dias a la semana. ¿A que esperas para apuntarte?</p>
+        </div>
+        <div class="tabla">
+            <h3>ESTADÍSTICAS</h3>
+        </div>
+        <div class="tabla">
+            <h2>+66</h2>
+            <h2>+5000</h2>
+            <h2>+14300</h2>
+        </div>
+        <div class="tabla">
+            <h3>PILOTOS</h3>
+            <h3>VUELOS</h3>
+            <h3>HORAS</h3>
+        </div>
+        <div class="tabla">
+            <h3></h3>
+        </div>
+        <div class="tabla">
+            <h3>QUÉ OFRECEMOS</h3>
+        </div>
+        <div class="tabla">
+            <h3><ion-icon name="people-outline" role="img" class="md hydrated" aria-label="people outline"></ion-icon>
+                Comunidad</h3>
+            <h3><ion-icon name="book-outline" role="img" class="md hydrated" aria-label="book outline"></ion-icon>
+                Documentación</h3>
+            <h3><ion-icon name="school-outline" role="img" class="md hydrated" aria-label="school outline"></ion-icon>
+                Academia</h3>
+        </div>
+        <div class="tabla">
+            <h3><ion-icon name="laptop-outline" role="img" class="md hydrated" aria-label="laptop outline"></ion-icon>
+                Sistema Exclusivo</h3>
+            <h3><ion-icon name="map-outline" role="img" class="md hydrated" aria-label="map outline"></ion-icon> Tours
+            </h3>
+            <h3><ion-icon name="airplane-outline" role="img" class="md hydrated"
+                    aria-label="airplane outline"></ion-icon> Libreas</h3>
+        </div>
+        <div class="tabla">
+            <h3></h3>
+        </div>
+        <div class="tabla">
+            <h3>PARTNERS</h3>
+        </div>
+        <div class="tabla">
+            <!--<a href="https://es.ivao.aero" target="_blank"><img src="resources/LogoIVAOSpBlanco.png" alt="IVAO"></a>-->
+            <a href="https://www.simbrief.com/home/index.php" target="_blank"><img src="resources/simbrief.png"
+                    alt="SIMBRIEF"></a>
+            <a href="http://srteam.epizy.com" target="_blank"><img src="resources/srteam.png" alt="SRTEAM"></a>
+        </div>
+        <div class="tabla">
+            <h3></h3>
+        </div>
+    </div>
+
+    <div class="nosotros" id="sistema" style="display: none;">
+        <div class="contenido">
+            <h2>HI CREW!</h2>
+            <p>Disponemos de un sistema propio creado por nosotros. Vuela por todo el mundo o date un capricho volando
+                al sitio que mas te guste gracias a nuestra central de vuelos charters o regulares. Olvídate de los
+                ACARS gracias a su sistema integrado de trackeo y reporte automático, interactivo y fácil de usar.
+                Cuenta con la integración de Simbrief para una mayos sencillez y manejo del mismo.</p>
+            <img src="resources/sistema.png" alt="Sistema">
+        </div>
+    </div>
+
+    <div class="nosotros" id="equipo" style="display: block;">
+        <div class="contenido">
+            <h2>STAFF</h2>
+            <p>Para cualquier duda no dudes en ponerte en contacto con nosotros en nuestro correo <a
+                    href="mailto:staff@thorairlines.com">staff@thorairlines.com</a></p>
+        </div>
+        <div class="tabla">
+            <h2>Alex Arans</h2>
+            <h2>David Morell</h2>
+            <h2>Alejandro Díaz</h2>
+        </div>
+        <div class="tabla">
+            <h3>CEO</h3>
+            <h3>DIRECTOR DE OPERACIONES</h3>
+            <h3>WEBMASTER &amp; CM</h3>
+        </div>
+        <div class="tabla">
+            <h3>600886</h3>
+            <h3>298029</h3>
+            <h3>641644</h3>
+        </div>
+        <div class="tabla">
+            <h3></h3>
+        </div>
+        <div class="tabla">
+            <h2>Jokin Vega</h2>
+            <h2>Brian Thoya</h2>
+            <h2>Sergio Guerrero</h2>
+        </div>
+        <div class="tabla">
+            <h3>RECURSOS HUMANOS</h3>
+            <h3>RELACIONES PÚBLICAS</h3>
+            <h3>COORDINADOR DE EVENTOS</h3>
+        </div>
+        <div class="tabla">
+            <h3>639659</h3>
+            <h3>575519</h3>
+            <h3>556495</h3>
+        </div>
+        <div class="tabla">
+            <h3></h3>
+        </div>
+        <div class="tabla">
+            <h2>Joan Llorach</h2>
+        </div>
+        <div class="tabla">
+            <h3>DIRECTOR FORMACIÓN</h3>
+        </div>
+        <div class="tabla">
+            <h3>582058</h3>
+        </div>
+        <div class="tabla">
+            <h3></h3>
+        </div>
+    </div>
+
+    <div class="nosotros" id="onesky" style="display: none">
+        <div class="contenido">
+            <h2>OneSky</h2>
+            <p><b>OneSky Alliance</b>, es una alianza aérea virtual fundada en el año 2022. Actualmente está formada por
+                3 aerolíneas (Thor Airlines, FlyWind y Executive Airlines).</p>
+            <img src="resources/LogoAlianzaLogosVAColasBlanco.png" alt="Alianza">
+        </div>
+    </div>
+    <div class="redes">
+        <a href="https://discord.gg/6nVFFM5wtS" target="_blank">&nbsp;<ion-icon name="logo-discord" role="img"
+                class="md hydrated" aria-label="logo discord"></ion-icon>&nbsp;</a>
+        <a href="https://twitter.com/ThorVirtual" target="_blank">&nbsp;<ion-icon name="logo-twitter" role="img"
+                class="md hydrated" aria-label="logo twitter"></ion-icon>&nbsp;</a>
+        <a href="https://www.instagram.com/thorvirtual/" target="_blank">&nbsp;<ion-icon name="logo-instagram"
+                role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>&nbsp;</a>
+        <a href="https://www.youtube.com/c/ThorAirlines" target="_blank">&nbsp;<ion-icon name="logo-youtube" role="img"
+                class="md hydrated" aria-label="logo youtube"></ion-icon>&nbsp;</a>
+    </div>
+
+    <div class="idioma"><a href="english.html"><img src="resources/eng.png" alt="English" width="40px"
+                height="auto"></a></div>
+    <div class="copy"><a onclick="MostrarPolitica()">Privacy Policy</a> | Copyright © 2022 <a
+            href="https://thorairlines.com">thorairlines.com</a></div>
+    <div class="ivao"><a href="https://www.ivao.aero" target="_blank"><img src="resources/va-white.png"
+                alt="IVAO PARTNERT VA" width="150px" height="auto"></a></div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="resources/js/jquery-2.1.1.js"></script>
+    <script src="resources/js/main.js"></script> <!-- Resource jQuery -->
+    <script>
+        var navList = document.getElementById("nav-lists");
+        function Show() {
+            navList.classList.add("_Menus-show");
+        }
+
+        function Hide() {
+            navList.classList.remove("_Menus-show");
+        }
+    </script>
+    <script>
+        function MostrarHome() {
+            var x = document.getElementById("home");
+            var a = document.getElementById("info");
+            var b = document.getElementById("sistema");
+            var c = document.getElementById("equipo");
+            var d = document.getElementById("politica");
+            var e = document.getElementById("onesky");
+            x.style.display = "block";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+        }
+        function MostrarNosotros() {
+            var x = document.getElementById("home");
+            var a = document.getElementById("info");
+            var b = document.getElementById("sistema");
+            var c = document.getElementById("equipo");
+            var d = document.getElementById("politica");
+            var e = document.getElementById("onesky");
+            x.style.display = "none";
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+        }
+        function MostrarSistema() {
+            var x = document.getElementById("home");
+            var a = document.getElementById("info");
+            var b = document.getElementById("sistema");
+            var c = document.getElementById("equipo");
+            var d = document.getElementById("politica");
+            var e = document.getElementById("onesky");
+            x.style.display = "none";
+            a.style.display = "none";
+            b.style.display = "block";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+        }
+        function MostrarStaff() {
+            var x = document.getElementById("home");
+            var a = document.getElementById("info");
+            var b = document.getElementById("sistema");
+            var c = document.getElementById("equipo");
+            var d = document.getElementById("politica");
+            var e = document.getElementById("onesky");
+            x.style.display = "none";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "block";
+            d.style.display = "none";
+            e.style.display = "none";
+        }
+        function MostrarPolitica() {
+            var x = document.getElementById("home");
+            var a = document.getElementById("info");
+            var b = document.getElementById("sistema");
+            var c = document.getElementById("equipo");
+            var d = document.getElementById("politica");
+            var e = document.getElementById("onesky");
+            x.style.display = "none";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "block";
+            e.style.display = "none";
+        }
+        function MostrarOneSky() {
+            var x = document.getElementById("home");
+            var a = document.getElementById("info");
+            var b = document.getElementById("sistema");
+            var c = document.getElementById("equipo");
+            var d = document.getElementById("politica");
+            var e = document.getElementById("onesky");
+            x.style.display = "none";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "block";
+        }
+    </script>
+
+    <div id="d285f049-a201-46b3-9ff0-37fc4dd98c52" style="display: block !important; z-index: 2147483647 !important;">
+    </div>
+</body><app-content ng-version="14.2.0"></app-content>
+
+</html>
