@@ -1,15 +1,16 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  font-family: 'Roboto',sans-serif;
-  margin: 0;
-  min-height: 100%;
+  font-family: 'Roboto', sans-serif;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
 
 /*a: a todos los links*/
@@ -19,19 +20,20 @@ a {
   font-weight: bold;
 }
 
-.contenido a:hover {
+a:hover {
   color: #efb810;
-}
-
-h1 {
-
-  font-family: 'Montserrat', sans-serif;
 }
 
 /*Todos los links del panel de navegacion*/
 nav a {
   font-weight: 600;
   margin: 10px;
+}
+
+.border {
+
+  border-bottom: 1px dotted #ccc;
+  margin-top: 20px;
 }
 
 /*Display: flex lo pone todo horizontal 
@@ -95,33 +97,46 @@ header {
 /*<- Header*/
 
 /*Medias ->*/
-@media(max-width:930px) {
+@media(max-width:952px) {
+ 
 
   .logo h3 {
-    flex-direction: column;
     display: none;
   }
 
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .columna-izquierda p{
+    text-align: left;
+
+  }
+
+  .columna-izquierda,
+  .columna-centro,
+  .columna-derecha {
+    min-width: 100%;
+    margin: 0;
+
+  }
+  
 }
 
-@media(max-width:600px) {
+@media(max-width:700px) {
   header {
     flex-direction: column;
-
+    width: 100%;
   }
 
-  nav {
-
-    padding: 10px 0px;
-
-  }
-
+  
 }
 
 /*<-Medias*/
 
 /*Staff ->*/
-.staff .contenido {
+.contenido {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,6 +176,7 @@ header {
 .contenido a {
   color: black;
 }
+
 /*<- Staff*/
 
 /*Politica de Privacidad ->*/
@@ -178,45 +194,57 @@ header {
   padding-top: 10px;
   text-align: left;
 }
+
 /*<-Politica de Privacidad*/
 
 /*Lista Pilotos->*/
-.pilotos {
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  color: black;
+
+.table-container {
+  border: solid 1px black;
+  margin: 0 auto;
   text-align: center;
   overflow-x: auto;
-  padding: 10px;
+  max-width: 100%;
+  align-items: center;
+
 }
 
-
-
-.pilotos table {
-  border-collapse: separate;
-  border-spacing: calc(33.33vw / 2) 0;
-  width: 100%;
+.table-container table {
+  color: black;
+  font-size: 14px;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 
-.pilotos table th {
-  font-size: 25px;
+.table-container thead {
+  background: gray;
+  font-size: 20px;
 }
 
-.pilotos table td img {
-  max-width: 70px;
-  height: auto;
+.table-container th {
+  padding: 1em;
+  text-transform: uppercase;
 }
 
-.pilotos a {
+.table-container td {
+
+  border-bottom: solid 1px black;
+}
+
+.table-container a {
   color: black;
 }
-/*Lista Pilotos->*/
+
+.table-container img {
+  width: 50px;
+}
+
+/*<-Lista Pilotos*/
 
 
 /*Footer->*/
 footer {
+  width: 100vw;
   background-color: #313131;
   display: flex;
   margin-top: auto;
@@ -243,8 +271,9 @@ footer {
 .columna-derecha {
   text-align: right;
 }
-.logo-peru{
-  width:140px;
+
+.logo-peru {
+  width: 140px;
 }
 
 .logo-discord {
@@ -253,7 +282,6 @@ footer {
 }
 
 footer p {
-  white-space: nowrap;
   margin: 5px 0;
   /* Espacio entre los párrafos */
   font-size: 12px;
@@ -262,15 +290,16 @@ footer p {
   /* Altura de línea reducida */
 
 }
+
 /*<-Footer*/
 
-
+/*Titulo pagina principal->*/
 .nosotros {
   text-align: center;
 }
 
 .nosotros p {
-  
+
   font-size: 50px;
   font-weight: bold;
   color: #333;
@@ -281,7 +310,7 @@ footer p {
 
 }
 
-.nosotros img{
+.nosotros img {
   width: 70px;
 }
 
@@ -309,52 +338,51 @@ footer p {
   }
 }
 
-.border {
-
-  border-bottom: 1px dotted #ccc;
-  margin-top: 20px;
-}
+/*<-Titulo pagina principal*/
 
 
-
+/*Explicacion pagina principal->*/
 .explicacion {
   margin-left: 7%;
   width: 85%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
+
+/*<-Explicacion pagina principal*/
 
 
 /*Linea del Tiempo Pagina Principal->*/
-.procesos-container{
+.procesos-container {
   margin-left: 10%;
   width: 80%;
   margin-bottom: 10px;
 }
 
-.procesos-seccion{
-  position:relative;
+.procesos-seccion {
+  position: relative;
   margin-bottom: 10px;
 }
 
-.procesos-seccion::before{
-  content:'';
-  position:absolute;
+.procesos-seccion::before {
+  content: '';
+  position: absolute;
   width: 3px;
   height: 120%;
   background-color: #efb810;
-  left:-15px;
-  top:1px;
+  left: -15px;
+  top: 1px;
 
 }
 
-.procesos-seccion::after{
-  content:'';
-  position:absolute;
+.procesos-seccion::after {
+  content: '';
+  position: absolute;
   width: 20px;
   height: 20px;
   background-color: #efb810;
   border-radius: 50%;
-  left:-23px;
-  top:1px;
+  left: -23px;
+  top: 1px;
 }
+
 /*<-Linea del Tiempo Pagina Principal*/
