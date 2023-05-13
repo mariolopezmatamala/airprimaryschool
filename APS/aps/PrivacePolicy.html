@@ -16,28 +16,30 @@
     <link rel="alternate" hreflang="x-default" href="airprimaryschool.com/">
 
     <link id="stylesheet" rel="stylesheet" href="../css/styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   
 </head>
 
 <body>
   <header>
     <div class="logo">
-
       <a href="https://www.airprimaryschool.es/">
         <img src="../imagenes/otras/APSdifuminadoNegro.png" alt="APS logo">
       </a>
       <h3 class="nombre-va">Air Primary School</h3>
-
     </div>
 
-    <div class="panel">
-      <nav>
-        <a href="./staff.html">STAFF</a>
-        <a href="./pilotos.html">PILOTOS</a>
-        <a href="ruta_del_documento" target="_blank">NORMATIVA</a>
-      </nav>
-    </div>
-
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav class="nav" id="nav">
+      <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+      <ul class="nav-list">
+        <li><a href="./staff.html">STAFF</a></li>
+        <li><a href="./pilotos.html">PILOTOS</a></li>
+        <li><a href="ruta_del_documento" target="_blank">NORMATIVA</a></li>
+        <li><a href="./registros.html">REGISTRO</a></li>
+      </ul>
+    </nav>
 
     <div class="language">
       <a href="https://www.airprimaryschool.es/en/">
@@ -46,7 +48,7 @@
     </div>
   </header>
 
-
+  <script src="../js/main.js"></script>
 
     <div class="privacepolicy">
         <h1>Política de privacidad de APS</h1>
@@ -145,7 +147,7 @@
       <div class="columna-izquierda">
   
         <p>
-          <a href="C:\Users\mario\Documents\HTML\APS\PrivacePolicy.html">Política de Privacidad</a> | <a
+          <a href="./PrivacePolicy.html">Política de Privacidad</a> | <a
             href="mailto:staff@airprimaryschool.com">Contacto</a>
         </p>
   
