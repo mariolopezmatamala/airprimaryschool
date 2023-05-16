@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -9,8 +10,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 0;
-  margin: 0;
 }
 
 /*a: a todos los links*/
@@ -20,9 +19,18 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+p {
+  padding-top: 10px;
+}
+
+.enlaces {
+  color: black;
+}
+
+body a:hover {
   color: #efb810;
 }
+
 
 /*Todos los links del panel de navegacion*/
 nav a {
@@ -34,6 +42,20 @@ nav a {
 
   border-bottom: 1px dotted #ccc;
   margin-top: 20px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+li {
+  margin-top: 10px;
 }
 
 /*Display: flex lo pone todo horizontal 
@@ -64,11 +86,12 @@ header {
   height: 50px;
 }
 
-.logo .nombre-va {
+.logo h3 {
   color: #efb810;
   white-space: nowrap;
   padding-left: 10px;
   font-size: 20px;
+  padding-bottom: 22px;
 }
 
 .language {
@@ -145,56 +168,57 @@ header {
 
 .abrir-menu,
 .cerrar-menu {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 650px) {
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
 
-    .abrir-menu {
-        color: #1c1c1c;
-    }
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
 
-    .cerrar-menu {
-        color: #ececec;
-    }
+  .abrir-menu {
+    color: #ececec;
+  }
 
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
+  .cerrar-menu {
+    color: #ececec;
+  }
 
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-    }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+  }
 
-    .nav-list li a {
-        color: #ecececec;
-    }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li a {
+    color: #ecececec;
+  }
 }
 
 
@@ -208,6 +232,10 @@ header {
   flex-direction: column;
   height: auto;
   width: 100%;
+  padding-top: 10px;
+}
+
+.staff .contenido p {
   padding-top: 10px;
 }
 
@@ -359,12 +387,25 @@ footer p {
 /*<-Footer*/
 
 /*Titulo pagina principal->*/
+
 .nosotros {
-  text-align: center;
+  background-image: url('../imagenes/pagPrincipal/grupo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 20vh;
+  /* altura del 50% de la altura de la pantalla */
+  display: flex;
+  /* utilizar un contenedor flexible */
+  align-items: center;
+  /* alinear verticalmente en el centro */
+  justify-content: center;
+  /* alinear horizontalmente en el centro */
 }
 
-.nosotros p {
-
+.nosotros .titulo {
+  text-align: center;
+  /* alinear el texto del título en el centro */
   font-size: 50px;
   font-weight: bold;
   color: #333;
@@ -372,24 +413,12 @@ footer p {
   letter-spacing: 4px;
   font-family: 'Montserrat', sans-serif;
   animation: aparecer 1.5s ease-out backwards;
-
 }
 
 .nosotros img {
   width: 70px;
 }
 
-@media screen and (max-width: 768px) {
-  .nosotros p {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .nosotros p {
-    font-size: 30px;
-  }
-}
 
 @keyframes aparecer {
   from {
@@ -410,6 +439,7 @@ footer p {
 .explicacion {
   margin-left: 7%;
   width: 85%;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -451,3 +481,51 @@ footer p {
 }
 
 /*<-Linea del Tiempo Pagina Principal*/
+
+/*Formulario*/
+.formulario-explicacion {
+  width: 100%;
+  padding: 0% 10%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:20px  0px ;
+}
+
+form .campo,
+textarea {
+  padding: 15px;
+  font-size: 15px;
+  border: 1px solid orange;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+form .campo {
+  width: 30%;
+}
+
+form textarea {
+  width: 50%;
+}
+
+
+.btn-enviar {
+  width: 100px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: #efb810;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.btn-enviar:hover {
+  background: orange;
+}
