@@ -67,7 +67,7 @@ text-align: center lo alinea pero en el horizontal
 /*Header ->*/
 header {
   display: flex;
-  min-height: 50px;
+  height: 60px;
   justify-content: space-between;
   background-color: #313131;
   align-items: center;
@@ -77,7 +77,6 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  flex-grow: 1;
   max-width: 50px;
   max-height: 50px;
 }
@@ -245,13 +244,9 @@ header {
 
 /*Politica de Privacidad ->*/
 .privacepolicy {
-  height: 100%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  z-index: -1;
-  background-color: white;
-  overflow: hidden;
   display: flex;
   justify-content: left;
   flex-direction: column;
@@ -291,7 +286,6 @@ header {
 }
 
 .table-container td {
-
   border-bottom: solid 1px black;
 }
 
@@ -302,13 +296,11 @@ header {
 .table-container img {
   width: 50px;
 }
-
 /*<-Lista Pilotos*/
 
 
 /*Footer->*/
 footer {
-  width: 100vw;
   background-color: #313131;
   display: flex;
   margin-top: auto;
