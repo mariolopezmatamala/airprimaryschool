@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-body {
+body {  
   font-family: 'Roboto', sans-serif;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -109,7 +109,10 @@ header {
   gap: 1rem;
   list-style-type: none;
 }
-
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
 
 /*<- Header*/
 
@@ -142,35 +145,6 @@ header {
 
 }
 
-@media(max-width: 952px) {
-
-  .logo h3 {
-    display: none;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  footer .columna-izquierda p {
-    text-align: left;
-  }
-
-  .columna-izquierda,
-  .columna-centro,
-  .columna-derecha {
-    min-width: 100%;
-    margin: 0;
-  }
-}
-
-.abrir-menu,
-.cerrar-menu {
-  display: none;
-}
-
 @media screen and (max-width: 650px) {
 
   .abrir-menu,
@@ -180,13 +154,6 @@ header {
     font-size: 1.25rem;
     background-color: transparent;
     cursor: pointer;
-  }
-
-  .abrir-menu {
-    color: #ececec;
-  }
-
-  .cerrar-menu {
     color: #ececec;
   }
 
@@ -218,6 +185,10 @@ header {
 
   .nav-list li a {
     color: #ecececec;
+  }
+  .formulario-explicacion{
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -484,10 +455,11 @@ footer p {
 
 /*Formulario*/
 .formulario-explicacion {
-  width: 100%;
-  padding: 0% 10%;
+  max-width: 70%;
+  padding:0px 10%;
 }
 
+/*
 form {
   display: flex;
   flex-direction: column;
@@ -529,3 +501,4 @@ form textarea {
 .btn-enviar:hover {
   background: orange;
 }
+*/
