@@ -69,44 +69,46 @@
       </thead>
       <tbody>
         <tr>
-          <td>APS25E</td>
+          <td><a href="#" onclick="mostrarVuelo('APS25E')">APS25E</a></td>
           <td><a href="https://www.ivao.aero/Member.aspx?ID=613247" target="_blank">613247</a></td>
-          <td><img src="../imagenes/rangos/primeroficialE.png" title="Pilots leader"></td>
-          <td>0</td>
+          <td><img src="../imagenes/rangos/primeroficialE.png" title="Lider Pilotos"></td>
+          <td id="participacionesAPS25E"></td>
         </tr>
         <tr>
-          <td>APS39R</td>
+          <td><a href="#" class="callsign" onclick="mostrarVuelo('APS39R')">APS39R</a></td>
           <td><a href="https://www.ivao.aero/Member.aspx?ID=669432" target="_blank">669432</a></td>
-          <td><img src="../imagenes/rangos/estudiante.png" title="Second officer"></td>
-          <td>0</td>
+          <td><img src="../imagenes/rangos/estudiante.png" title="Segundo oficial"></td>
+          <td id="participacionesAPS39R"></td>
         </tr>
         <tr>
-          <td>APS77R</td>
+          <td><a href="#" class="callsign" onclick="mostrarVuelo('APS77R')">APS77R</a></td>
           <td><a href="https://www.ivao.aero/Member.aspx?ID=681715" target="_blank">681715</a></td>
-          <td><img src="../imagenes/rangos/aspirante.png" title="Pilot student"></td>
-          <td>0</td>
+          <td><img src="../imagenes/rangos/aspirante.png" title="Estudiante"></td>
+          <td id="participacionesAPS77R"></td>
         </tr>
 
         <tr>
-          <td>APS21J</td>
+          <td><a href="#" class="callsign" onclick="mostrarVuelo('APS21J')">APS21J</a></td>
           <td><a href="https://www.ivao.aero/Member.aspx?ID=676856" target="_blank">676856</a></td>
-          <td><img src="../imagenes/rangos/estudiante.png" title="Second officer"></td>
-          <td>0</td>
+          <td><img src="../imagenes/rangos/estudiante.png" title="Segundo Oficial"></td>
+          <td id="participacionesAPS21J"></td>
         </tr>
 
         <tr>
-          <td>APS27C</td>
+          <td><a href="#" class="callsign" onclick="mostrarVuelo('APS27C')">APS27C</a></td>
           <td><a href="https://www.ivao.aero/Member.aspx?ID=668028" target="_blank">668028</a></td>
-          <td><img src="../imagenes/rangos/estudiante.png" title="Second officer"></td>
-          <td>0</td>
+          <td><img src="../imagenes/rangos/estudiante.png" title="Segundo Oficial"></td>
+          <td id="participacionesAPS27C"></td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <p style="font-size: 13px; text-align: center;">*Click on any VID to access his profile</p>
+  <p style="font-size: 13px; text-align: center;">*Click on any callsign to access his flights list.</p>
 
+  <script src="../js/mostrarvuelos.js"></script>
 
+  <div id="tablaVuelos" class="tabla-vuelos-container"></div>
 
   <footer>
     <div class="columna-izquierda">
