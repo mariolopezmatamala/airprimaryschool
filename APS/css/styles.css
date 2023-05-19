@@ -494,16 +494,16 @@ form textarea {
   background: orange;
 }
 */
-
 .tabla-vuelos-container {
   padding-top: 30px;
   margin: 0 auto;
-  max-width: 600px; /* Ajusta el ancho máximo según tu preferencia */
-  overflow-x: auto;
+  max-width: 100%; /* Ajusta el ancho máximo según tu preferencia */
+  overflow-x: auto; /* Cambiado de "scroll" a "auto" */
+  white-space: nowrap; /* Agregado para evitar el desbordamiento de texto */
 }
 
 .tabla-vuelos {
-  width: 100%;
+  width: fit-content; /* Cambiado a "fit-content" para que la tabla se ajuste al contenido */
   border-collapse: collapse;
 }
 
