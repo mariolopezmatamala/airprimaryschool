@@ -1,24 +1,28 @@
 // Definir datos de vuelos para cada piloto
+//Javier Uceda
 const vuelosAPS25E = [
-    { numero: '1', fecha: '2023-01-01', origen: 'AER', destino: 'BOS', avion: 'B737', reglas: 'VFR', duracion: '2 horas' },
-    { numero: '2', fecha: '2023-02-02', origen: 'JFK', destino: 'LAX', avion: 'A320', reglas: 'IFR', duracion: '4 horas' },
-    { numero: '3', fecha: '2023-03-03', origen: 'ORD', destino: 'DFW', avion: 'B747', reglas: 'VFR', duracion: '3 horas' }
+
 ];
 
+//Mario Lopez
 const vuelosAPS39R = [
-    { numero: '1', fecha: '2023-04-04', origen: 'LHR', destino: 'CDG', avion: 'A380', reglas: 'VFR', duracion: '2 horas' },
-    { numero: '2', fecha: '2023-05-05', origen: 'SFO', destino: 'SEA', avion: 'B787', reglas: 'IFR', duracion: '2.5 horas' }
+    { numero: '1', fecha: '2023-08-06', origen: 'SPJC', destino: 'SPJC', avion: 'c172', reglas: 'VFR', duracion: '1 hora' },    
 ];
 
+//Javier Rodríguez
 const vuelosAPS77R = [
-    { numero: '1', fecha: '2023-06-06', origen: 'HND', destino: 'ICN', avion: 'B777', reglas: 'IFR', duracion: '1.5 horas' }
+    { numero: '1', fecha: '2023-08-06', origen: 'SPJC', destino: 'SPJC', avion: 'DA62', reglas: 'VFR', duracion: '1 hora' },    
 ];
 
-const vuelosAPS21J = [];
+//Mario Vargas
+const vuelosAPS21J = [
+    { numero: '1', fecha: '2023-08-06', origen: 'SPJC', destino: 'SPJC', avion: 'DA62', reglas: 'VFR', duracion: '1 hora' },   
+    
+];
 
+//Alberto Almeida
 const vuelosAPS27C = [
-    { numero: '1', fecha: '2023-07-07', origen: 'LAX', destino: 'LAS', avion: 'B737', reglas: 'VFR', duracion: '1 hour' },
-    { numero: '2', fecha: '2023-08-08', origen: 'MIA', destino: 'ATL', avion: 'A320', reglas: 'IFR', duracion: '2 hours' }
+    { numero: '1', fecha: '2023-08-06', origen: 'SPJC', destino: 'SPJC', avion: 'C172', reglas: 'VFR', duracion: '1 hora' },    
 ];
 
 // Función para mostrar los vuelos de un piloto
