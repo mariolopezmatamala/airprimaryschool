@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-body {  
+body {
   font-family: 'Roboto', sans-serif;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -108,6 +108,7 @@ header {
   gap: 1rem;
   list-style-type: none;
 }
+
 .abrir-menu,
 .cerrar-menu {
   display: none;
@@ -185,7 +186,8 @@ header {
   .nav-list li a {
     color: #ecececec;
   }
-  .formulario-explicacion{
+
+  .formulario-explicacion {
     align-items: center;
     justify-content: center;
   }
@@ -296,6 +298,7 @@ header {
 .table-container img {
   width: 50px;
 }
+
 /*<-Lista Pilotos*/
 
 
@@ -446,10 +449,6 @@ footer p {
 /*<-Linea del Tiempo Pagina Principal*/
 
 /*Formulario*/
-.formulario-explicacion {
-  max-width: 70%;
-  padding:0px 10%;
-}
 
 /*
 form {
@@ -496,16 +495,145 @@ form textarea {
 */
 
 
+.form-container {
+  text-align: center;
+}
+
+.form-container h2 {
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  font-size: 17px;
+  color: #8c8107;
+  margin-bottom: 50px;
+
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgb(20, 3, 3);
+  width: 800px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+  margin-bottom: 25px;
+
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #000000;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  padding: 20px 15px;
+  box-shadow: 0 0 20px rgba(20, 3, 3, 0.372);
+  border: 0;
+  outline: none;
+  border-radius: 25px;
+  color: #000000;
+  font-size: 16px;
+}
+
+
+::placeholder {
+  color: #9f9f7e;
+  font-size: 16px;
+
+}
+
+textarea {
+  margin-bottom: 40px;
+
+}
+
+.btn {
+  padding: 17px 15px;
+  width: 180px;
+  align-self: center;
+  text-transform: capitalize;
+  color: #4b4b08;
+  font-size: 16px;
+  box-shadow: 0 0 20px (0, 0, 0, 0.2);
+  cursor: pointer;
+  background: linear-gradient(90deg,
+      rgb(165, 177, 3)0%,
+      rgb(248, 250, 110)100%);
+
+}
+
+.success {
+  position: absolute;
+  top: 50px;
+  color: rgb(32, 227, 2);
+  font-size: 18px;
+}
+
+.error {
+  position: absolute;
+  top: 50px;
+  color: #E02D00;
+  font-size: 18px;
+}
+
+@media(max-width:800px) {
+
+  form {
+    width: 90%;
+  }
+
+  .form-group {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    margin-bottom: 30px;
+  }
+
+
+}
+
+
 .tabla-vuelos-container {
   padding-top: 30px;
   margin: 0 auto;
-  max-width: 100%; /* Ajusta el ancho máximo según tu preferencia */
-  overflow-x: auto; /* Cambiado de "scroll" a "auto" */
-  white-space: nowrap; /* Agregado para evitar el desbordamiento de texto */
+  max-width: 100%;
+  /* Ajusta el ancho máximo según tu preferencia */
+  overflow-x: auto;
+  /* Cambiado de "scroll" a "auto" */
+  white-space: nowrap;
+  /* Agregado para evitar el desbordamiento de texto */
 }
 
 .tabla-vuelos {
-  width: fit-content; /* Cambiado a "fit-content" para que la tabla se ajuste al contenido */
+  width: fit-content;
+  /* Cambiado a "fit-content" para que la tabla se ajuste al contenido */
   border-collapse: collapse;
 }
 

@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>Pagina en desarrollo</title>
+    <title>Join up</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
@@ -59,7 +59,7 @@
 
     <script src="../js/main.js"></script>
 
-
+    <!--
     <div class="formulario-explicacion">
         <h1>Fly with Us</h1>
         <p>You are expected to have the following minimum knowledge as a requirement:</p>
@@ -74,26 +74,60 @@
             <a href="https://discord.gg/pDHDQYda" class="enlaces">
                 Discord</a> Server where we will get in touch with you to continue with the recruiting process
         </p>
-        <!--
+        
             <p>Si deseas pertenecer a nuestro grupo y crees que cumples los requisitos, deberás rellenar este formulario
                 indicando nombre, VID de IVAO, correo electrónico y una pequeña descripción indicando por qué crees que
                 eres apto.</p>
             <p>El responsable se pondrá en contacto contigo lo más rápido posible.</p>
             <p style=" font-style: italic; font-size: 12px">Todos los datos recogidos en este formulario tendrán un carácter confidencial cuyo uso será
                 exclusivamente para la identificación del aspirante. Revise la normativa para mas información.</p>
-        -->
+        
     </div>
-    <!--
-        <form action="#" autocomplete="off" class="formulario-rellenar">
-            <input type="text" name="nombre" placeholder="Nombre y apellido" class="campo">
-            <input type="number" name="numero" placeholder="VID de IVAO" class="campo">
-            <input type="email" name="email" placeholder="Correo electrónico" class="campo">
-            <textarea name="text" placeholder="Escribe una pequeña presentación"></textarea>
-            <input type="submit" name="enviar" value="Enviar" class="btn-enviar">
-        </form>
-        -->
+-->
 
+    <div class="form-container">
+        <h2>Be part of us</h2>
+        <p>
+            If you're interested in being part of it, please fill out this form. <br> We will get in touch with you as
+            soon as possible.
+        </p>
+        <div class="form">
+            <form method="post" action="../contacto\contacto.php" autocomplete="off">
+                <div class="form-group">
+                    <div class="form-content">
+                        <label for="name">Your name </label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-content">
+                        <label for="email">Your email address </label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
+                    </div>
+                </div>
 
+                <div class="form-group">
+                    <div class="form-content">
+                        <label for="discord">Your discord username </label>
+                        <input type="text" id="discord" name="discord" placeholder="Discord username">
+                    </div>
+                    <div class="form-content">
+                        <label for="vid">Your IVAO VID </label>
+                        <input type="tel" id="vid" name="vid" placeholder="VID">
+                    </div>
+                </div>
+                <label for="message">Tell us about yourself</label>
+                <textarea clase="message" name="message" id="message" cols="30" rows="10"
+                    placeholder="Message"></textarea>
+
+                <input class="btn" type="submit" name="contact" value="Enviar Mensaje">
+            </form>
+        </div>
+        <p style=" color:red; font-size:15px; padding:0px 30px">All the data collected in this form will have a
+            confidential nature, and its use will be solely for the purpose of identifying the applicant. <br> Please
+            review the regulations for more information.
+
+    </div>
+
+    </div>
 
     <footer>
         <div class="columna-izquierda">
