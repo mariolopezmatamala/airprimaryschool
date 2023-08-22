@@ -522,7 +522,7 @@ form {
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgb(20, 3, 3);
-  width: 800px;
+  width: 600px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -600,7 +600,7 @@ textarea {
   font-size: 18px;
 }
 
-@media(max-width:800px) {
+@media(max-width:700px) {
 
   form {
     width: 90%;
@@ -656,3 +656,19 @@ textarea {
 .tabla-vuelos tr:hover {
   background-color: lightgray;
 }
+
+/*Caja pagina principal*/
+.caja {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(90deg,
+  rgb(165, 177, 3)0%,
+  rgb(240, 242, 98)100%);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  
+}
+
