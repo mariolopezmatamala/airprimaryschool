@@ -47,74 +47,302 @@
     <nav class="nav" id="nav">
       <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
       <ul class="nav-list">
-        <li><a href="./es/staff.html">STAFF</a></li>
-        <li><a href="./es/pilotos.html">PILOTOS</a></li>
+        <li>
+          <a href="./index.html">NOSOTROS</a>
+          <ul class="menu-vertical">
+            <li><a href="#nosotros">Índice</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#pilotos">Pilotos</a></li>
+          </ul>
+        </li>
         <li><a href="./es/Normativa_APS_4.0.pdf" target="_blank">NORMATIVA</a></li>
         <li><a href="./es/registros.html">REGISTRO</a></li>
+        <li>
+          <a href="#">E-LEARNING</a>
+          <ul class="menu-vertical">
+            <!--<<li><a href="#">¿Qué es?</a></li>-->
+            <li><a href="https://airprimaryschool.com/training" target="_blank">Acceso</a></li>
+
+
+          </ul>
+        </li>
       </ul>
     </nav>
 
     <div class="language">
-      <a href="https://www.airprimaryschool.com/en">
-        <img src="./icons/gb.svg" alt="ENG">
+      <a href="https://www.airprimaryschool.com">
+        <img src="./icons/gb.svg" alt="pe">
       </a>
     </div>
   </header>
 
-  <script src="./js/main.js"></script>
 
-  <div class="nosotros">
-    <p class="titulo">Pilotos Certificados <a href="#">
+
+  <div class="nosotros" id="nosotros">
+    <p class="titulo">Pilotos Certificados<a href="#">
         <img src="./icons/pe.svg" alt="ENG">
       </a></p>
   </div>
 
-  <div class="explicacion">
-    <p>Somos una aerolínea virtual que opera en IVAO y nuestro fin es dar servicio al departamento de formación y
-      training de la división de Perú asistiendo a sus sesiones de formación, ayudando a los alumnos de la división en
-      su formación como ATC´s virtuales garantizando un tráfico mínimo y de calidad. </p>
+  <div class="tri-layout-container">
+    <div class="tri-layout-left"></div>
+    <div class="tri-layout-middle">
+      <h3 style="margin-bottom: 15px;">¿Quiénes Somos?</h3>
+
+      <div class="nosotros-container">
+        <p>El Grupo de Pilotos Certificados de la División de Perú desempeña una función de vital importancia al proveer
+          al
+          Departamento de Entrenamiento con una cantidad adecuada de vuelos necesarios para llevar a cabo exitosamente
+          los exámenes y entrenamientos prácticos de la división. Su contribución se traduce en la realización de las
+          maniobras esenciales requeridas para asegurar la validación adecuada de los exámenes. </p>
+        <br>
+        Si deseas unirte, accede al apartado de <a href="./es/registros.html"
+          style="text-decoration: underline; color:black"> registro</a>. Te pedimos que te leas
+        detenidamente la normativa antes de aplicar.
+        </p>
+      </div>
+
+      <div class="estadisticas-container">
+        <div class="estadisticas-particular">
+          <img src="./imagenes\pagPrincipal\pilot.png" style="max-width: 60px;" alt="Pilotos">
+          <h4 class="counter">5</h4>
+          <p>Pilotos</p>
+
+        </div>
+        <div class="estadisticas-particular">
+          <img src="./imagenes\pagPrincipal\exam.png" style="max-width: 70px;" alt="Examenes y trainings asistidos">
+          <h4 class="counter">3</h4>
+          <p>Exam/trainings</p>
+
+        </div>
+        <div class="estadisticas-particular">
+          <script src="./js/mostrarvuelos.js"></script>
+          <img src="./imagenes\pagPrincipal/plane.png" style="max-width: 80px;" alt="Participaciones">
+          <h4 id="totalParticipaciones" class="counter-p"></h4>
+          <p>Participaciones</p>
+        </div>
+      </div>
+
+      <script src="./js/counter.js"></script>
+
+      <div class="linea-dibujo"></div>
+      <div class="container-explicacion">
+        <div class="item-explicacion">
+          <img src="./imagenes\pagPrincipal\pilotos.png" alt="Imagen 1">
+          <h6>Pilotos capacitados</h6>
+          <p>Formamos un equipo de pilotos excepcional que se destaca por su nivel de excelencia y prestigio. Mantenemos
+            un firme compromiso con la calidad, por lo que sometemos a nuestros pilotos a evaluaciones y adiestramientos
+            exhaustivos de
+            manera regular. Esto nos asegura que sus habilidades sigan estando a la altura de los estándares de
+            excelencia que nuestro grupo representa.</p>
+        </div>
+        <div class="item-explicacion">
+          <img src="./imagenes\pagPrincipal/TorreControl.jpg" alt="Imagen 2">
+          <h6>Impulsando la división</h6>
+          <p>Desempeñamos un papel fundamental al volar exámenes y prácticas oficiales de IVAO, contribuyendo
+            directamente al desarrollo de la División Peruana. Garantizamos que los controladores aéreos adquieran
+            las destrezas y conocimientos necesarios antes de asumir sus responsabilidades en la gestión del tráfico
+            aéreo.
+          </p>
+        </div>
+        <div class="item-explicacion">
+          <img src="./imagenes\pagPrincipal/e-learning.png" alt="Imagen 3">
+          <h6>Sistema e-Learning</h6>
+          <p>El sistema de aprendizaje en línea es un sitio web basado en Moodle en el que los nuevos aspirantes y los
+            pilotos podrán verificar sus conocimientos a través de pequeños examenes y controles de capacitación
+            recurrente para brindar la mejor calidad.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="tri-layout-right"></div>
+
   </div>
 
-  <div class="procesos-container">
+  <div class="staff avion-background">
+    <div class="tri-layout-container">
+      <div class="tri-layout-left"></div>
+      <div class="tri-layout-middle">
+        <div class="contenido" id="staff">
 
-    <div class="procesos-seccion">
-      <h3>1. Requisitos iniciales</h3>
-      <p>Cualquiera que desee puede unirse a nosotros. Para ello, debe cumplir una serie de requisitos:</p>
-      <ul>
-        <li>Rango Mínimo <strong>FS3</strong></li>
-        <li><strong>500h</strong> como Piloto</li>
-        <li><strong>16 años</strong> de edad</li>
-      </ul>
+          <h3>Conoce a nuestro equipo</h3>
+          <p>Para cualquier cosa, puedes ponerte en contacto con nosotros en nuestro correo <a
+              href="mailto:staff@airprimaryschool.com">staff@airprimaryschool.com</a> </p>
 
-    </div>
+        </div>
 
-    <div class="procesos-seccion">
-      <h3>2. Proceso</h3>
-      <p>Si cumples con lo anterior, podrás continuar con el proceso:</p>
-      <ul>
-        <li>Entrevista con RRHH</li>
-        <li>Examen de inglés aeronáutico</li>
-        <li>Examen teórico y práctico de aviación</li>
-      </ul>
-    </div>
+        <div class="informacion">
+          <div class="grupo-arriba">
+            <div class="grupo">
+              <img src="./imagenes/staff/Captura de pantalla 2023-05-02 135750.png" alt="Descripción de la imagen">
+              <h6>Mario Lopez</h6>
+              <p class="funcion">Director y Webmaster</p>
+              <p class="correo"><a href="mailto:webmaster@airprimaryschool.com">webmaster@airprimaryschool.com</a></p>
+              <p class="VID">669432</p>
+            </div>
+            <div class="grupo">
+              <img src="./imagenes/staff/psico.png" alt="Descripción de la imagen">
+              <h6>Javier Rodriguez</h6>
+              <p class="funcion">Subdirector y Recursos Humanos</p>
+              <p class="correo"><a href="mailto:rrhh@airprimaryschool.com">rrhh@airprimaryschool.com</a></p>
+              <p class="VID">681715</p>
+            </div>
+          </div>
+          <div class="grupo-abajo">
+            <div class="grupo">
+              <img src="./imagenes/staff/vargas.jpg" alt="Descripción de la imagen">
+              <h6>Mario Vargas</h6>
+              <p class="funcion">Director de Operaciones</p>
+              <p class="correo"><a href="mailto:operaciones@airprimaryschool.com">operaciones@airprimaryschool.com</a>
+              </p>
+              <p class="VID">676856</p>
+            </div>
+            <div class="grupo">
+              <img src="./imagenes/staff/javi.jpg" alt="Descripción de la imagen">
+              <h6>Javier Uceda</h6>
+              <p class="funcion">Líder Pilotos y Examinador</p>
+              <p class="correo"><a href="mailto:examinadores@airprimaryschool.com">examinadores@airprimaryschool.com</a>
+              </p>
+              <p class="VID">613247</p>
+            </div>
+            <div class="grupo">
+              <img src="./imagenes/staff/miguel.jpg" alt="Descripción de la imagen">
+              <h6>Miguel Mercader</h6>
+              <p class="funcion">Administrador e-Learning</p>
+              <p class="correo"><a href="mailto:e-learning@airprimaryschool.com">e-learning@airprimaryschool.com</a></p>
+              <p class="VID">564746</p>
+            </div>
+          </div>
+        </div>
 
-    <div class="procesos-seccion">
-      <h3>3. Admisión</h3>
-      <p>Una vez hayas pasado todo el proceso, podrás decir con orgullo que perteneces a los pilotos certificados de
-        IVAO Perú.<br>
-        Empezarás con el rango de estudiante hasta que hayas participado en 3 sesiones como Piloto.</p>
-    </div>
-
-    <div class="procesos-seccion">
-      <h3>4. Obligaciones</h3>
-      <p>Para mantenerte como Piloto Certificado, deberás participar al menos en el 50% de las sesiones mensuales, salvo
-        causa justificada.</p>
+      </div>
+      <div class="tri-layout-right"></div>
     </div>
   </div>
 
-  <div class="explicacion">
-    <p>Para más detalles, puedes descargar el documento con toda la <a href="./es/Normativa_APS_4.0.pdf" target="_blank"
-        class="enlaces">Normativa</a></p>
+  <div class="tri-layout-container">
+    <div class="tri-layout-left"></div>
+    <div class="tri-layout-middle">
+      <h3 id="pilotos">Nuestros pilotos</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Callsign</th>
+              <th>VID</th>
+              <th>Rango</th>
+              <th>Participaciones</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td><a href="#" class="callsign" onclick="mostrarVuelo('APS25E')">APS25E <i
+                    class="fa-solid fa-chevron-down"></i></a></td>
+              <td><a href="https://www.ivao.aero/Member.aspx?ID=613247" class="VID" target="_blank">613247</a></td>
+              <td><img src="./imagenes/rangos/primeroficialE.png" title="Lider Pilotos"></td>
+              <td id="participacionesAPS25E"></td>
+            </tr>
+            <tr>
+              <td><a href="#" class="callsign" onclick="mostrarVuelo('APS39R')">APS39R <i
+                    class="fa-solid fa-chevron-down"></i></a></td>
+              <td><a href="https://www.ivao.aero/Member.aspx?ID=669432" class="VID" target="_blank">669432</a></td>
+              <td><img src="./imagenes/rangos/estudiante.png" title="Segundo oficial"></td>
+              <td id="participacionesAPS39R"></td>
+            </tr>
+            <tr>
+              <td><a href="#" class="callsign" onclick="mostrarVuelo('APS77R')">APS77R <i
+                    class="fa-solid fa-chevron-down"></i></a></td>
+              <td><a href="https://www.ivao.aero/Member.aspx?ID=681715" class="VID" target="_blank">681715</a></td>
+              <td><img src="./imagenes/rangos/aspirante.png" title="Estudiante"></td>
+              <td id="participacionesAPS77R"></td>
+            </tr>
+
+            <tr>
+              <td><a href="#" class="callsign" onclick="mostrarVuelo('APS21J')">APS21J <i
+                    class="fa-solid fa-chevron-down"></i></a></td>
+              <td><a href="https://www.ivao.aero/Member.aspx?ID=676856" class="VID" target="_blank">676856</a></td>
+              <td><img src="./imagenes/rangos/estudiante.png" title="Segundo Oficial"></td>
+              <td id="participacionesAPS21J"></td>
+            </tr>
+
+            <tr>
+              <td><a href="#" class="callsign" onclick="mostrarVuelo('APS27C')">APS27C <i
+                    class="fa-solid fa-chevron-down"></i></a></td>
+              <td><a href="https://www.ivao.aero/Member.aspx?ID=668028" class="VID" target="_blank">668028</a></td>
+              <td><img src="./imagenes/rangos/estudiante.png" title="Segundo Oficial"></td>
+              <td id="participacionesAPS27C"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div id="callsignDiv" class="callsingDiv"></div>
+      <div id="tablaVuelos" class="tablaVuelos">
+        <div id="tablaVuelos-row"></div>
+      </div>
+
+    </div>
+
+
+    <div class="tri-layout-right"></div>
+
+  </div>
+
+  <div class="faq-container">
+    <div class="tri-layout-container">
+      <div class="tri-layout-left"></div>
+      <div class="tri-layout-middle">
+        <div class="linea-dibujo"></div>
+        <h3 style="text-align: left;padding-left:20px">FAQ</h3>
+        <div class="faq-card" onclick="toggleFAQ(0)">
+          <h6>¿Es gratuita? <i class="faq-icon fas fa-chevron-down"></i></h6>
+
+          <div class="faq-content">
+            Nuestros servicios son y serán siempre completamente gratuitos.
+          </div>
+        </div>
+
+        <div class="faq-card" onclick="toggleFAQ(1)">
+          <h6>¿Cuáles son los requisitos para acceder? <i class="faq-icon fas fa-chevron-down"></i></h6>
+          <div class="faq-content">
+            Los requisitos son bajos y permiten que la gran mayoría de usuarios pueda ingresar en la aerolínea:
+            <ul>
+              <li>Rango Mínimo FS3</li>
+              <li>500h como Piloto</li>
+              <li>16 años de edad</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-card" onclick="toggleFAQ(2)">
+          <h6>¿Cómo puedo registrarme? <i class="faq-icon fas fa-chevron-down"></i></h6>
+          <div class="faq-content">
+            Para acceder, simplemente dirígete a la <a href="./es/registros.html" style="color: rgb(52, 51, 51);">
+              sección de registros.</a> Allí, completa cada campo requerido y luego
+            presiona
+            el botón "Enviar mensaje". Una vez hecho esto, el mensaje será automáticamente remitido al departamento de
+            Recursos Humanos,
+            quienes te guiarán en los pasos siguientes para avanzar en tu proceso de ingreso. Si hubiese alguna
+            incidencia
+            durante
+            el proceso puedes contactar a Recursos Humanos en rrhh@airprimaryschool.com.
+          </div>
+        </div>
+
+        <div class="faq-card" onclick="toggleFAQ(3)">
+          <h6>Una vez esté dentro, ¿Qué tengo que cumplir? <i class="faq-icon fas fa-chevron-down"></i></h6>
+          <div class="faq-content">
+            La única obligación que tienen los pilotos es asistir al 50% de las sesiones mensuales, salvo causa
+            justificada.
+          </div>
+        </div>
+        <script src="./js/main.js"></script>
+      </div>
+
+      <div class="tri-layout-right"></div>
+    </div>
   </div>
 
 
@@ -150,6 +378,7 @@
     </div>
 
   </footer>
+
 
 
 
