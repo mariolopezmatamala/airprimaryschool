@@ -579,6 +579,20 @@ a {
 
 /*<- Staff*/
 
+/*Politica de Privacidad ->*/
+.privacepolicy {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding-top: 10px;
+  text-align: left;
+}
+
+/*<-Politica de Privacidad*/
+
 
 
 /*<-Lista Pilotos*/
