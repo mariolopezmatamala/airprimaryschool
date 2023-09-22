@@ -2,7 +2,8 @@
 
 //Javier Uceda
 const vuelosAPS25E = [
-
+    { numero: '01', fecha: '2023-09-13', origen: 'SPJC', destino: 'SPJC', avion: 'C172', regla: 'VFR', tiempo: '1H' },
+    { numero: '02', fecha: '2023-09-19', origen: 'SPJC', destino: 'SPJC', avion: 'DA62', regla: 'VFR', tiempo: '1H' },
 ];
 
 //Mario Lopez
@@ -11,13 +12,16 @@ const vuelosAPS39R = [
     { numero: '02', fecha: '2023-08-17', origen: 'SPJC', destino: 'SPJC', avion: 'B738', regla: 'IFR', tiempo: '1H' },
     { numero: '03', fecha: '2023-08-20', origen: 'SPJC', destino: 'SPJC', avion: 'PA34', regla: ' Z ', tiempo: '1H' },
     { numero: '04', fecha: '2023-08-26', origen: 'SPJC', destino: 'SPJC', avion: 'PA34', regla: ' Z ', tiempo: '1H' },
-    { numero: '05', fecha: '2023-08-29', origen: 'SPJC', destino: 'SPJC', avion: 'c172', regla: 'VFR', tiempo: '1H' },
-
+    { numero: '05', fecha: '2023-08-29', origen: 'SPJC', destino: 'SPJC', avion: 'C172', regla: 'VFR', tiempo: '1H' },
+    { numero: '06', fecha: '2023-09-05', origen: 'SPJC', destino: 'SPJC', avion: 'C172', regla: 'VFR', tiempo: '1H' },
+    { numero: '07', fecha: '2023-09-13', origen: 'SPJC', destino: 'SPJC', avion: 'PA34', regla: 'IFR', tiempo: '1H' },
+    { numero: '08', fecha: '2023-09-18', origen: 'SPJC', destino: 'SPJC', avion: 'C172', regla: 'VFR', tiempo: '1H' },
 ];
 
 //Javier Rodríguez
 const vuelosAPS77R = [
     { numero: '01', fecha: '2023-08-06', origen: 'SPJC', destino: 'SPJC', avion: 'DA62', regla: 'VFR', tiempo: '1H' },
+    { numero: '02', fecha: '2023-09-12', origen: 'SPJC', destino: 'SPJC', avion: 'DA62', regla: 'VFR', tiempo: '1H' },
 ];
 
 //Mario Vargas
@@ -25,6 +29,7 @@ const vuelosAPS21J = [
     { numero: '01', fecha: '2023-08-06', origen: 'SPJC', destino: 'SPJC', avion: 'DA62', regla: 'VFR', tiempo: '1H' },
     { numero: '02', fecha: '2023-08-17', origen: 'SPJC', destino: 'SPJC', avion: 'DA62', regla: 'VFR', tiempo: '1H' },
     { numero: '03', fecha: '2023-08-25', origen: 'SPJC', destino: 'SPJC', avion: 'C172', regla: 'VFR', tiempo: '1H' },
+    { numero: '04', fecha: '2023-09-05', origen: 'SPJC', destino: 'SPJC', avion: 'C172', regla: 'VFR', tiempo: '1H' },
 
 ];
 
@@ -32,10 +37,16 @@ const vuelosAPS21J = [
 const vuelosAPS27C = [
     { numero: '01', fecha: '2023-08-06', origen: 'SPJC', destino: 'SPJC', avion: 'C172', regla: 'VFR', tiempo: '1H' },
     { numero: '02', fecha: '2023-08-20', origen: 'SPJC', destino: 'SPJC', avion: 'A320', regla: 'IFR', tiempo: '1H' },
+    { numero: '03', fecha: '2023-09-13', origen: 'SPJC', destino: 'SPJC', avion: 'A320', regla: 'IFR', tiempo: '1H' },
 ];
 
 // Miguel Mercader
 const vuelosAPS31Q = [
+    { numero: '01', fecha: '2023-09-13', origen: 'SPJC', destino: 'SPJC', avion: 'A20N', regla: 'IFR', tiempo: '1H' },
+];
+
+// Miguel Mercader
+const vuelosAPS05L = [
 
 ];
 
@@ -81,6 +92,9 @@ function mostrarVuelo(callsign) {
             break;
         case 'APS31Q':
             vuelos = vuelosAPS31Q;
+            break;
+        case 'APS05L':
+            vuelos = vuelosAPS05L;
             break;
         default:
             // No se encontraron vuelos para el callsign
@@ -311,6 +325,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const participacionesAPS31Q = vuelosAPS31Q.length;
     document.getElementById('participacionesAPS31Q').textContent = participacionesAPS31Q;
+
+    const participacionesAPS05L = vuelosAPS05L.length;
+    document.getElementById('participacionesAPS05L').textContent = participacionesAPS05L;
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -320,7 +337,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ...vuelosAPS77R,
         ...vuelosAPS21J,
         ...vuelosAPS27C,
-        ...vuelosAPS31Q
+        ...vuelosAPS31Q,
+        ...vuelosAPS05L
     ];
 
     const totalParticipaciones = vuelosTotales.length;
@@ -334,7 +352,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ...vuelosAPS77R,
         ...vuelosAPS21J,
         ...vuelosAPS27C,
-        ...vuelosAPS31Q
+        ...vuelosAPS31Q,
+        ...vuelosAPS05L
     ];
     const h4Elements = document.querySelectorAll(".counter-p");
 
