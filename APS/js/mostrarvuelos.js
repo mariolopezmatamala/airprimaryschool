@@ -8,7 +8,7 @@ const vuelosAPS25E = [
 
 //Mario Lopez
 const vuelosAPS39R = [
-    { numero: '01', fecha: '2023-08-06', origen: 'SPJC', destino: 'SPJC', avion: 'C172', regla: 'VFR', tiempo: '1H' },
+    { numero: '01', fecha: '2023-08-06', origen: 'SPJC', destino: 'SPJC', avion: 'C172', regla: 'VFR', tiempo: '01:30' },
     { numero: '02', fecha: '2023-08-17', origen: 'SPJC', destino: 'SPJC', avion: 'B738', regla: 'IFR', tiempo: '1H' },
     { numero: '03', fecha: '2023-08-20', origen: 'SPJC', destino: 'SPJC', avion: 'PA34', regla: ' Z ', tiempo: '1H' },
     { numero: '04', fecha: '2023-08-26', origen: 'SPJC', destino: 'SPJC', avion: 'PA34', regla: ' Z ', tiempo: '1H' },
@@ -16,6 +16,8 @@ const vuelosAPS39R = [
     { numero: '06', fecha: '2023-09-05', origen: 'SPJC', destino: 'SPJC', avion: 'C172', regla: 'VFR', tiempo: '1H' },
     { numero: '07', fecha: '2023-09-13', origen: 'SPJC', destino: 'SPJC', avion: 'PA34', regla: 'IFR', tiempo: '1H' },
     { numero: '08', fecha: '2023-09-18', origen: 'SPJC', destino: 'SPJC', avion: 'C172', regla: 'VFR', tiempo: '1H' },
+    { numero: '09', fecha: '2023-09-25', origen: 'EDOA', destino: 'LKLN', avion: 'PA34', regla: 'VFR', tiempo: '1H' },
+
 ];
 
 //Javier Rodríguez
@@ -43,11 +45,31 @@ const vuelosAPS27C = [
 // Miguel Mercader
 const vuelosAPS31Q = [
     { numero: '01', fecha: '2023-09-13', origen: 'SPJC', destino: 'SPJC', avion: 'A20N', regla: 'IFR', tiempo: '1H' },
+    { numero: '02', fecha: '2023-10-01', origen: 'RJAA', destino: 'ZBAA', avion: 'A333', regla: 'IFR', tiempo: '5H' },
+    { numero: '03', fecha: '2023-10-01', origen: 'ZBAA', destino: 'ZSPD', avion: 'A333', regla: 'IFR', tiempo: '2H' },
+    { numero: '04', fecha: '2023-10-04', origen: 'SLLP', destino: 'SCEL', avion: 'A20N', regla: 'IFR', tiempo: '3H' },
+    { numero: '05', fecha: '2023-10-05', origen: 'SCEL', destino: 'SAEZ', avion: 'A320', regla: 'IFR', tiempo: '2H' },
+    { numero: '06', fecha: '2023-10-06', origen: 'ZSPD', destino: 'NZCH', avion: 'A339', regla: 'IFR', tiempo: '12H' },
+    { numero: '07', fecha: '2023-10-07', origen: 'NZCH', destino: 'NZAA', avion: 'A339', regla: 'IFR', tiempo: '1H' },
+    { numero: '08', fecha: '2023-10-07', origen: 'NZAA', destino: 'YBBN', avion: 'A339', regla: 'IFR', tiempo: '5H' },
+    { numero: '09', fecha: '2023-10-07', origen: 'YBBN', destino: 'YSSY', avion: 'A339', regla: 'IFR', tiempo: '2H' },
+    { numero: '10', fecha: '2023-10-07', origen: 'YSSY', destino: 'YMML', avion: 'A339', regla: 'IFR', tiempo: '2H' },
+    { numero: '11', fecha: '2023-10-07', origen: 'YMML', destino: 'YPAD', avion: 'A333', regla: 'IFR', tiempo: '2H' },
+    { numero: '12', fecha: '2023-10-11', origen: 'YPAD', destino: 'YPPH', avion: 'A333', regla: 'IFR', tiempo: '4H' },
+    { numero: '13', fecha: '2023-10-11', origen: 'YPPH', destino: 'FACT', avion: 'A333', regla: 'IFR', tiempo: '12H' },
+    { numero: '14', fecha: '2023-10-12', origen: 'FACT', destino: 'FAOR', avion: 'A333', regla: 'IFR', tiempo: '2H' },
+    
 ];
 
-// Miguel Mercader
+// Junior Ipanaque
 const vuelosAPS05L = [
+    { numero: '01', fecha: '2023-09-29', origen: 'SPCL', destino: 'SPJC', avion: 'C700', regla: 'IFR', tiempo: '2H' },
+    { numero: '02', fecha: '2023-09-30', origen: 'SPAY', destino: 'SPCL', avion: 'C414', regla: 'VFR', tiempo: '1H' },
+];
 
+// Joaquin Ampuero
+const vuelosAPS55D = [
+    { numero: '01', fecha: '2023-10-12', origen: 'VIDP', destino: 'VTBS', avion: 'B788', regla: 'IFR', tiempo: '4H' },
 ];
 
 // Función para crear un div de estilo personalizado
@@ -95,6 +117,9 @@ function mostrarVuelo(callsign) {
             break;
         case 'APS05L':
             vuelos = vuelosAPS05L;
+            break;
+        case 'APS55D':
+            vuelos = vuelosAPS55D;
             break;
         default:
             // No se encontraron vuelos para el callsign
@@ -233,10 +258,17 @@ function mostrarVuelo(callsign) {
       </div>
       <div class="tablaVuelos-letter">
       </div>
+      <div class="tablaVuelos-letter">
+      </div>
+      <div class="tablaVuelos-letter">
+      </div>
       <div class="tablaVuelos-rel1">
       </div>
       <div class="tablaVuelos-rel2">
       </div>
+      <div class="tablaVuelos-letter">
+      </div>
+
     </div>
     </div>`;
     headerRow.innerHTML = headerContent; // Tomar el contenido del encabezado del HTML y agregarlo a la fila
@@ -328,6 +360,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const participacionesAPS05L = vuelosAPS05L.length;
     document.getElementById('participacionesAPS05L').textContent = participacionesAPS05L;
+    
+    const participacionesAPS55D = vuelosAPS55D.length;
+    document.getElementById('participacionesAPS55D').textContent = participacionesAPS55D;
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -338,7 +373,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ...vuelosAPS21J,
         ...vuelosAPS27C,
         ...vuelosAPS31Q,
-        ...vuelosAPS05L
+        ...vuelosAPS05L,
+        ...vuelosAPS55D
     ];
 
     const totalParticipaciones = vuelosTotales.length;
@@ -353,7 +389,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ...vuelosAPS21J,
         ...vuelosAPS27C,
         ...vuelosAPS31Q,
-        ...vuelosAPS05L
+        ...vuelosAPS05L,
+        ...vuelosAPS55D
     ];
     const h4Elements = document.querySelectorAll(".counter-p");
 
